@@ -22,9 +22,7 @@ ll Merge(int* arr, int* temp, int l, int m, int r) {
     }
     for (int i = l; i <= r; i++) {
         arr[i] = temp[i];
-        // cout << arr[i] << " ";
     }
-    // cout << "ans=" << ans << endl;
     return ans;
 }
 
@@ -38,8 +36,7 @@ ll SmallSum(int* arr, int* temp, int l, int r) {
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
+    ios::sync_with_stdio(false), cin.tie(0), cout.tie(0);
     // start from here
 
     int n;
