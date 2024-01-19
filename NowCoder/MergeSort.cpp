@@ -14,6 +14,7 @@ int main() {
     for (auto&& i : arr) {
         cin >> i;
     }
+
     for (int step = 1;step < n;step *= 2) {
         for (int start = 0; start < n; start += (2 * step)) {
             int p1 = start, p2 = start + step;
