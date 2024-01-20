@@ -42,14 +42,11 @@ int main() {
 
     QuickSort(arr, 0, n - 1);
 
-    bool b = true;
-    for (auto&& i : arr) {
-        if (b) {
-            b = false;
-        } else {
+    for (int j = 0; j < n; j++) {
+        if (j) {
             cout << " ";
         }
-        cout << i;
+        cout << arr[j];
     }
 
     return 0;

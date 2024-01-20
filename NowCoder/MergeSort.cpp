@@ -31,20 +31,17 @@ int main() {
             while (p2 < q2) {
                 temp[cur++] = arr[p2++];
             }
-            for (int j = start; j < q2; j++) {
-                arr[j] = temp[j];
+            for (int k = start; k < q2; k++) {
+                arr[k] = temp[k];
             }
         }
     }
 
-    bool b = true;
-    for (auto&& i : arr) {
-        if (b) {
-            b = false;
-        } else {
+    for (int j = 0; j < n; j++) {
+        if (j) {
             cout << " ";
         }
-        cout << i;
+        cout << arr[j];
     }
 
     return 0;
