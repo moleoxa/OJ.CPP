@@ -1,5 +1,7 @@
 algorithm-journey/
+video/
 bin/
+
 *.log
 *.exe
 
