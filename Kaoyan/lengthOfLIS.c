@@ -4,7 +4,7 @@ int lengthOfLIS(int* nums, int numsSize) {
     int ans = 0;
     for (int i = 0; i < numsSize; i++) {
         int x = ans;
-        while (pre[x] >= nums[i]) {
+        while (nums[i] <= pre[x]) {
             x--;
         }
         if (x == ans) {
