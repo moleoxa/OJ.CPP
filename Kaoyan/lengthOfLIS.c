@@ -1,6 +1,6 @@
 int lengthOfLIS(int* nums, int numsSize) {
     int pre[numsSize + 1];
-    pre[0] = 10001;
+    pre[0] = -10001;
     int ans = 0;
     for (int i = 0; i < numsSize; i++) {
         int x = ans;
